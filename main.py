@@ -52,7 +52,7 @@ async def start(client, message):
             InlineKeyboardButton("❮ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❯", url=f"bot?startgroup=true")
         ]
         ]
-        video = "https://graph.org/file/244ff9b4ca2b3c9f02d82.mp4"
+        photo = "https://graph.org/file/3b8607f67f597663653a0.jpg"
         await message.reply_video(video, caption=f"""ʜᴇʟʟᴏ[{message.from_user.first_name}](tg://user?id={message.from_user.id}),
 
 ┏━━━━━━━━━━━━━━━━━┓
