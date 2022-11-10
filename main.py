@@ -7,10 +7,10 @@ import os
 import re
 
 
-API_ID = os.environ.get("API_ID", "16401923") 
-API_HASH = os.environ.get("API_HASH", "3faea4a96156fd1768b180d0aeacf099") 
+API_ID = os.environ.get("API_ID", "") 
+API_HASH = os.environ.get("API_HASH", "") 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", ) 
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://Mukesh01:chuprah@cluster0.dz9iv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+MONGO_URL = os.environ.get("MONGO_URL", "")
 
 
 bot = Client(
@@ -40,8 +40,8 @@ async def start(client, message):
     if message.chat.type != "private":
         buttons = [
                   [
-                   InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ab_sumit"),
-                   InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/bellysupportchat"),
+                   InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/theshivanshu"),
+                   InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/yourbest_friends"),
                   ]       
                   ]
         await message.reply("ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴇʀsᴏɴᴀʟ",
@@ -49,18 +49,16 @@ async def start(client, message):
         
     else:
         buttons = [[
-            InlineKeyboardButton("❮ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❯", url=f"https://t.me/bellyxrobot?startgroup=true")
+            InlineKeyboardButton("❮ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❯", url=f"bot?startgroup=true")
         ]
         ]
-        video = "https://te.legra.ph/file/05916beb5a619d7be9a77.mp4"
+        photos = "https://graph.org/file/3b8607f67f597663653a0.jpg https://graph.org/file/64b318883bb4d35c8c3d2.jpg https://graph.org/file/a7bb2c30c0990024e65c2.jpg"splits,()
         await message.reply_video(video, caption=f"""ʜᴇʟʟᴏ[{message.from_user.first_name}](tg://user?id={message.from_user.id}),
-mere babu ne thana thaya kya?? ...
 
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴏᴡɴᴇʀ   [𝗦𝗨𝗠𝗜𝗧](https://t.me/Kya_rakhu_smjh_nhi_aa_rha)
-┣★ ᴜᴘᴅᴀᴛᴇs [𝗖𝗛𝗔𝗡𝗡𝗘𝗟](https://t.me/ab_sumit)
-┣★ sᴜᴘᴘᴏʀᴛ [𝗚𝗥𝗢𝗨𝗣](https://t.me/bellysupportchat)
-┣★ sᴏᴜʀᴄᴇ  [R𝗥𝗘𝗣𝗢](https://github.com/isu-op-op/CHATBOT)
+♡ᴏᴡɴᴇʀ [❥𝕮𝖍𝖆𝖒𝖕𝖚 ᭄_🖤⚜☄]➤ (https://t.me/thechampu)
+♡ᴄʜᴀɴɴᴇʟ [🖤ꜱ⃟нͥινͣαͫиѕнυ🖤]➤(https://t.me/theshivanshu)
+♡ʀᴇᴘᴏ [🇷 🇪 🇵 🇴 ]➤(https://github.com/TheChampu)
 ┗━━━━━━━━━━━━━━━━━┛
 """, reply_markup=InlineKeyboardMarkup(buttons))
 
